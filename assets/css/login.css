@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fafafa;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+   
+    
+}
+.slide-container{
+    background-image: url(../images/teste.png);
+    background-repeat: no-repeat;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-container{
+    display:flex;
+    flex-grow: 1;
+}
+.main-content{
+    margin:30px auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    max-width: 940px;
+    flex-grow: 1;
+}
+.slide-container{
+    height: 620px;
+    flex-basis: 450px;
+
+}
+.slide-content{
+    margin:26px 0 0  156px;
+    position:relative;
+}
+.slide-container img{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.slide-container img.active{
+    opacity: 1;
+    visibility: visible;
+}
+.suave{
+    transition: 2s ease-out;
+    
+}
+
+/*form*/
+.form-container{
+    flex-grow: 1;
+    max-width: 350px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box{
+    border:1px solid #dfdfdf;
+    background-color: #fff;
+    border-radius: 3px;
+
+}
+.form-content{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.form-content .logo{
+    text-align: center;
+    height: 50px;
+    width: 175px;
+    margin:10px auto 20px auto;
+}
+.form-content .logo img{
+   max-width: 100px;
+}
+.login-form{
+    padding-top: 25px;
+    margin-bottom: 10px;
+
+
+}
+.form-group{
+    margin:0 40px 6px;
+}
+.login-input{
+    height: 35px;
+    border:1px solid #dfdfdf;
+    border-radius: 3px;
+    position: relative;
+}
+.login-input input{
+    width: 100%;
+    height: 100%;
+    padding:9px 8px 7px;
+    border:0;
+    outline: 0;
+    background-color: #fafafa;
+    color:#2c2c2c;
+    font-size: 12px;
+}
+.login-input input::placeholder{
+    font-size:12px;
+}
+.btn-group{
+    padding: 8px 40px;
+    width: 100%;
+}
+.login-btn{
+    width: 100%;
+    background-color: rgba(0,149,246);
+    opacity:1;
+    border:1px solid transparent;
+    border-radius: 4px;
+    outline: 0;
+    color:#fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding:5px 10px;
+}
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.or hr{
+    width: 35%;
+    margin: 0 10px;
+    
+
+
+}
+.or >span{
+    color:#919191;
+    font-weight:600;
+    font-size: 13px;
+}
+.goto{
+    margin-bottom: 10px;
+   padding:5px;
+    border:1px solid #dfdfdf;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.goto p{
+    font-size: 14px;
+    margin:15px;
+    text-align: center;
+    color:#2c2c2c;
+}
+.goto a{
+    text-decoration: none;
+    color:rgba(0,162,255);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.app-download{
+    display: flex;
+  flex-direction: column;
+}
+.app-download p{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin:10px 20px;
+
+}
+.store-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+.store-link a img{
+    height: 40px;
+}
+.store-link a:nth-child(1){
+    margin-right: 8px;
+}
+.get-app-txt{
+    color:#2c2c2c;
+}
+
+.facebook-login a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0a58ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+}
+.fa-facebook-square:before {
+    font-size: 16px;
+    margin-right:9px;
+}
+.forgot-password{
+    color:#00376b;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.links a{
+    text-decoration: none;
+    color:#8e8e8e;
+    font-size: 13px;
+    line-height: 18px;
+    margin:0 8px 8px 8px;
+}
+.copyright{
+    padding:12px 0;
+    color:#8e8e8e;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+.footer{
+    align-items: center;
+    justify-content:center;
+    max-width: 940px;
+    margin: auto;
+   padding-bottom:45px;
+    
+}
+/*dark mode*/
+.dark-mode{
+    background-color: #1a1a1a;
+    color:#dfdfdf;
+    
+}
+.dark-mode-link{
+    color:#fff;
+
+}
